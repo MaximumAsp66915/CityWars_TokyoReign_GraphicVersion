@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="VBox" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#addCard" prefHeight="390.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ShowCardsVboxAdminController">
+   <children>
+      <AnchorPane fx:id="AnchorPane" prefHeight="390.0" prefWidth="400.0" style="-fx-background-color: transparent;">
+         <children>
+            <ImageView fx:id="CardBackground" fitHeight="390.0" fitWidth="400.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../image/pinkBackground.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="CardImage" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/character1.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="CardName" alignment="CENTER" layoutY="200.0" prefHeight="29.0" prefWidth="200.0" text="Character" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <GridPane fx:id="GridPane" layoutX="200.0" prefHeight="390.0" prefWidth="200.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.20001220703125" minWidth="0.0" prefWidth="4.79998779296875" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="115.0" minWidth="10.0" prefWidth="101.4000244140625" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="116.80002441406249" minWidth="10.0" prefWidth="94.19997558593748" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="43.5999755859375" minWidth="0.19997558593749432" prefWidth="0.19997558593749432" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="124.79999389648438" minHeight="0.0" prefHeight="11.800002694129944" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="233.60003662109375" minHeight="0.0" prefHeight="233.60003662109375" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="233.60003662109375" minHeight="10.0" prefHeight="233.60003662109375" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="233.60003662109375" minHeight="10.0" prefHeight="233.60003662109375" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="233.60003662109375" minHeight="10.0" prefHeight="233.60003662109375" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="233.60003662109375" minHeight="10.0" prefHeight="233.60003662109375" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="233.60003662109375" minHeight="10.0" prefHeight="233.60003662109375" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="233.60003662109375" minHeight="10.0" prefHeight="233.60003662109375" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="233.60003662109375" minHeight="10.0" prefHeight="233.60003662109375" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="233.60003662109375" minHeight="10.0" prefHeight="233.60003662109375" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="233.60003662109375" minHeight="10.0" prefHeight="233.60003662109375" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="Name" text="Name :" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="SpellType" layoutX="18.0" layoutY="27.0" text="SpellType :" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label fx:id="Duration" layoutX="18.0" layoutY="22.0" text="Duration :" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label fx:id="Damage" layoutX="18.0" layoutY="100.0" text="Damage :" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label fx:id="UpgradeLevel" layoutX="18.0" layoutY="140.0" text="UpgradeLevel :" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label fx:id="UpgradeCost" layoutX="18.0" layoutY="180.0" text="UpgradeCost :" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Label fx:id="Cost" layoutX="18.0" layoutY="219.0" text="Cost :" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <Label fx:id="Image" layoutX="18.0" layoutY="258.0" text="Image :" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <Label fx:id="ImageBackground" layoutX="18.0" layoutY="298.0" text="ImageBackground:" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <TextField fx:id="NameT" style="-fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="SpellTypeT" layoutX="116.0" layoutY="19.0" style="-fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="DurationT" layoutX="116.0" layoutY="62.0" style="-fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <TextField fx:id="DamageT" layoutX="116.0" layoutY="106.0" style="-fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <TextField fx:id="UpgradeLevelT" layoutX="116.0" layoutY="149.0" style="-fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <TextField fx:id="UpgradeCostT" layoutX="116.0" layoutY="192.0" style="-fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                  <TextField fx:id="CostT" layoutX="116.0" layoutY="236.0" style="-fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                  <TextField fx:id="ImageT" layoutX="116.0" layoutY="280.0" style="-fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                  <TextField fx:id="ImageBackgroundT" layoutX="116.0" layoutY="323.0" style="-fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                  <Label fx:id="Attack" layoutX="15.0" layoutY="61.0" text="Attack :" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="AttackT" layoutX="116.0" layoutY="57.0" style="-fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

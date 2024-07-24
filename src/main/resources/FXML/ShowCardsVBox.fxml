@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="VBox" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#openCard" prefHeight="250.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ShowCardsVboxController">
+   <children>
+      <AnchorPane fx:id="AnchorPane" prefHeight="250.0" prefWidth="200.0" style="-fx-background-color: transparent;">
+         <children>
+            <ImageView fx:id="CardBackground" fitHeight="250.0" fitWidth="200.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../image/pinkBackground.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="CardImage" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/character1.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="CardName" alignment="CENTER" layoutY="200.0" prefHeight="29.0" prefWidth="200.0" text="Character" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="Owned" alignment="CENTER" layoutX="2.0" layoutY="229.0" prefHeight="18.0" prefWidth="194.0" text="owned" textFill="#0010f7" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

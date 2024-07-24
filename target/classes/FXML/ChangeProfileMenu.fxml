@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChangeProfileMenuController">
+   <center>
+      <AnchorPane prefHeight="554.0" prefWidth="846.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="553.0" fitWidth="838.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/simplePurplishBackground.jpeg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="23.0" prefHeight="55.0" prefWidth="352.0" text="City Wars" textFill="#734199">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="302.0" layoutY="70.0" rotate="-10.8" text="Tokyo Reign" textFill="#9963ef">
+               <font>
+                  <Font name="System Italic" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="Exit" layoutX="764.0" layoutY="500.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="51.0" style="-fx-background-color: #461040;" text="Exit" textFill="#8e488d" />
+            <Button fx:id="Back" layoutX="14.0" layoutY="500.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="51.0" style="-fx-background-color: #461040;" text="Back" textFill="#a941a9" />
+            <Button layoutX="450.0" layoutY="427.0" mnemonicParsing="false" onAction="#saveProfile" prefHeight="38.0" prefWidth="128.0" style="-fx-background-color: #589cf4;" text="Save Profile" textFill="#002686" />
+            <Label layoutX="55.0" layoutY="117.0" prefHeight="34.0" prefWidth="134.0" text="Username :" textFill="#0fb3ff">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Username" layoutX="55.0" layoutY="151.0" prefHeight="26.0" prefWidth="306.0" promptText="Username" style="-fx-background-color: #a946c1;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="55.0" layoutY="187.0" prefHeight="34.0" prefWidth="134.0" text="Nickname :" textFill="#0fb3ff">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Nickname" layoutX="55.0" layoutY="221.0" prefHeight="26.0" prefWidth="306.0" promptText="Nickname" style="-fx-background-color: #a946c1;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="55.0" layoutY="259.0" prefHeight="34.0" prefWidth="134.0" text="Email :" textFill="#0fb3ff">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Email" layoutX="55.0" layoutY="293.0" prefHeight="26.0" prefWidth="306.0" promptText="Email" style="-fx-background-color: #a946c1;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="55.0" layoutY="331.0" prefHeight="34.0" prefWidth="134.0" text="Gender :" textFill="#0fb3ff">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="Gender" editable="true" layoutX="55.0" layoutY="365.0" prefHeight="26.0" prefWidth="306.0" promptText="Gender" style="-fx-background-color: #a946c1;" />
+            <Label layoutX="55.0" layoutY="399.0" prefHeight="34.0" prefWidth="134.0" text="Date of birth:" textFill="#0fb3ff">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="Month" editable="true" layoutX="55.0" layoutY="433.0" prefHeight="26.0" prefWidth="128.0" promptText="Month" style="-fx-background-color: #a946c1;" />
+            <ComboBox fx:id="Date" editable="true" layoutX="190.0" layoutY="433.0" prefHeight="26.0" prefWidth="76.0" promptText="Date" style="-fx-background-color: #a946c1;" />
+            <ComboBox fx:id="Year" editable="true" layoutX="274.0" layoutY="433.0" prefHeight="26.0" prefWidth="86.0" promptText="Year" style="-fx-background-color: #a946c1;" />
+            <Label layoutX="447.0" layoutY="117.0" prefHeight="34.0" prefWidth="134.0" text="Current Password :" textFill="#0fb3ff">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="CurrentPassword" layoutX="447.0" layoutY="151.0" prefHeight="29.0" prefWidth="250.0" promptText="Current Password" style="-fx-background-color: #a946c1;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="447.0" layoutY="187.0" prefHeight="34.0" prefWidth="134.0" text="New Password :" textFill="#0fb3ff">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="NewPassword" layoutX="447.0" layoutY="221.0" prefHeight="29.0" prefWidth="250.0" promptText="New Password" style="-fx-background-color: #a946c1;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <Label fx:id="Error" alignment="CENTER" layoutX="450.0" layoutY="360.0" prefHeight="35.0" prefWidth="252.0" textFill="#ff00b7">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.CardMenu">
+   <center>
+      <AnchorPane prefHeight="554.0" prefWidth="846.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="553.0" fitWidth="838.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/MainMenuBackGround.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="171.0" layoutY="27.0" prefHeight="55.0" prefWidth="352.0" text="City Wars" textFill="#734199">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="459.0" layoutY="74.0" rotate="-10.8" text="Tokyo Reign" textFill="#9963ef">
+               <font>
+                  <Font name="System Italic" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="Exit" layoutX="764.0" layoutY="500.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="51.0" style="-fx-background-color: #461040;" text="Exit" textFill="#8e488d" />
+            <Button fx:id="Back" layoutX="14.0" layoutY="500.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="51.0" style="-fx-background-color: #461040;" text="Back" textFill="#a941a9" />
+            <HBox fx:id="CardContainer" layoutX="131.0" layoutY="129.0" prefHeight="250.0" prefWidth="200.0" />
+            <GridPane layoutX="365.0" layoutY="128.0" prefHeight="252.0" prefWidth="319.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="Parameter1" prefHeight="27.0" prefWidth="319.0" textFill="#38d9ff">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Parameter2" layoutX="10.0" layoutY="18.0" prefHeight="27.0" prefWidth="319.0" textFill="#38d9ff" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Parameter3" layoutX="10.0" layoutY="18.0" prefHeight="27.0" prefWidth="319.0" textFill="#38d9ff" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Parameter4" layoutX="10.0" layoutY="18.0" prefHeight="27.0" prefWidth="319.0" textFill="#38d9ff" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Parameter5" layoutX="10.0" layoutY="18.0" prefHeight="27.0" prefWidth="319.0" textFill="#38d9ff" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Parameter6" layoutX="10.0" layoutY="18.0" prefHeight="27.0" prefWidth="319.0" textFill="#38d9ff" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <Button fx:id="Upgrade" layoutX="458.0" layoutY="487.0" mnemonicParsing="false" onAction="#upgrade" prefHeight="40.0" prefWidth="101.0" style="-fx-background-color: #7732e3;" text="Upgrade" textFill="#ff37cd">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="Buy" layoutX="271.0" layoutY="487.0" mnemonicParsing="false" onAction="#buy" prefHeight="40.0" prefWidth="101.0" style="-fx-background-color: #7732e3;" text="Buy" textFill="#ff37cd">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="Error" alignment="CENTER" layoutX="217.0" layoutY="452.0" prefHeight="22.0" prefWidth="394.0" textFill="#7843ff">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="Gold" layoutX="655.0" layoutY="51.0" prefHeight="22.0" prefWidth="160.0" text="Golds : 99999" textFill="#ffbf29">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="Level" layoutX="655.0" layoutY="80.0" prefHeight="22.0" prefWidth="160.0" text="Level : 99999">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.7234848051360159" endY="0.24905307003946017" startX="0.24621212121212122">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9961801767349243" green="0.9900000095367432" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006729475100942127">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.06325706594885598">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8842105269432068" green="0.31111112236976624" blue="0.7886939644813538" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Button fx:id="SetAsProfile" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#setAsProfile" prefHeight="40.0" prefWidth="101.0" style="-fx-background-color: #7732e3;" text="Set as profile" textFill="#ffea00">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
